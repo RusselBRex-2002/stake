@@ -85,13 +85,11 @@ export default function GameController() {
                 </div>
             ) : (
                 <div className="flex w-full h-screen overflow-hidden rounded-2xl bg-gray-800">
-                    {/* ── Left panel: controls ── */}
                     <div className="flex flex-col w-1/3 gap-6 p-8 bg-gray-900">
                         <h2 className="text-2xl font-bold text-white">
                             Balance: ₹{balance.toFixed(2)}/-
                         </h2>
 
-                        {/* Stepper */}
                         <div className="flex h-12 items-center overflow-hidden">
                             <button
                                 onClick={() => setBet((b) => Math.max(b - 1, 1))}
@@ -132,7 +130,6 @@ export default function GameController() {
                             </button>
                         </div>
 
-                        {/* Percentage shortcuts */}
                         <div className="flex gap-2">
                             {[25, 50, 75, 100].map((pct) => (
                                 <button
@@ -158,7 +155,6 @@ export default function GameController() {
                             ))}
                         </div>
 
-                        {/* Spin */}
                         <button
                             onClick={handleSpin}
                             disabled={isSpinning}
@@ -174,7 +170,6 @@ export default function GameController() {
 
                     </div>
 
-                    {/* ── Right panel: reels ── */}
                     <div className="flex-1 flex flex-col justify-center items-center gap-2 bg-gray-700 p-8">
                         <div className="flex gap-2">
                             {reels.map((sym, i) => (
