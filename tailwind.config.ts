@@ -12,6 +12,15 @@ const config: Config = {
       backgroundImage: {
         "custom-dark-gradient": "linear-gradient(90deg, #000000, #001801)",
       },
+      keyframes: {
+        reelSpin: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+      },
+      animation: {
+        reelSpin: 'reelSpin 0.1s linear infinite',
+      },
       colors: {
         success: "#00E701",
         background: "#0f1923",

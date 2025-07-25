@@ -33,6 +33,11 @@ const games = [
   link: "/flip",
   logo: <Rocket size={48} />,
   img: "/assets/flipper.jpg", 
+},{
+  name: "SLOT",
+  link: "/slot",
+  logo: <Rocket size={48} />,
+  img: "/assets/slot.png", 
 },
 ];
 
