@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { playSpinSound, playWinSound } from './sound';
 import { useCommonStore } from '@/app/_store/commonStore';
+import { Container } from 'postcss';
 
 declare global {
     interface Window {
@@ -68,9 +69,9 @@ export default function GameController() {
     return (
         <div className="flex flex-col items-center justify-center">
             {balance <= 0 ? (
-                <>
+                <div className='flex flex-col overflow-hidden rounded-2xl bg-gray-800 gap-2 p-12 m-14'>
                     <h2 className="text-2xl font-bold text-white">Game Over</h2>
-                    <p className="text-white mb-6">Your balance is zero.</p>
+                    <p className="text-white mb-6">Your balance is 0</p>
                     <Link
                         href="/"
                         className="
@@ -81,7 +82,7 @@ export default function GameController() {
                     >
                         Go Home
                     </Link>
-                </>
+                </div>
             ) : (
                 <div className="flex w-full h-screen overflow-hidden rounded-2xl bg-gray-800">
                     {/* ── Left panel: controls ── */}
