@@ -66,7 +66,7 @@ export default function GameController() {
 
 
     return (
-        <div className="flex flex-col items-center justify-center py-12">
+        <div className="flex flex-col items-center justify-center">
             {balance <= 0 ? (
                 <>
                     <h2 className="text-2xl font-bold text-white">Game Over</h2>
