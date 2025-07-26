@@ -14,7 +14,6 @@ declare global {
 
 const SYMBOLS = ['🍒', '🍋', '🔔', '7️⃣', '🍊'] as const;
 const REEL_COUNT = 3;
-const INITIAL_BALANCE = 100;
 
 function getRandomReels(): string[] {
     return Array.from({ length: REEL_COUNT }, () =>

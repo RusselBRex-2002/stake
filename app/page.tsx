@@ -29,16 +29,21 @@ const games = [
     logo: <Rocket size={48} />,
     img: "/assets/limbo.avif",
   }, {
-  name: "FLIP",
-  link: "/flip",
-  logo: <Rocket size={48} />,
-  img: "/assets/flipper.jpg", 
-},{
-  name: "SLOT",
-  link: "/slot",
-  logo: <Rocket size={48} />,
-  img: "/assets/slot.png", 
-},
+    name: "FLIP",
+    link: "/flip",
+    logo: <Rocket size={48} />,
+    img: "/assets/flipper.jpg",
+  }, {
+    name: "SLOT",
+    link: "/slot",
+    logo: <Rocket size={48} />,
+    img: "/assets/slot.png",
+  }, {
+    name: "RPS",
+    link: "/rps",
+    logo: <Rocket size={48} />,
+    img: "/assets/rps.png",
+  },
 ];
 
 export default function Home() {
